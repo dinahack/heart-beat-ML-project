@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>distance</title>
+</head>
+<body>
+	<h1>distance</h1>
+
+ 
+	<script type="text/javascript">
+
+	var latt = [12.942563,13.081688,13.040312,13.0307429,13.082188,13.0307053,13.082188,13.134437,13.049688,13.054812,13.115312,13.101184,3.089187,13.007312,13.048312,13.054562,12.927188,13.069312,13.063187];
+	var longg= [80.140313,80.164437,80.142938,80.1326559,80.216062,80.1326556,80.216187,80.293063,80.209563,80.211187,80.219313,80.150248,80.219812,80.206563,80.268562,80.243813,80.112313,80.266062,80.251937];
+	var dis = []
+		
+	for (var i = 0; i < latt.length; i++) {
+			
+			
+    dis.push(calcCrow(latt[i],longg[i],89.3225525,53.8819422).toFixed(1));
+    
+
+
+    //This function takes in latitude and longitude of two location and returns the distance between them as the crow flies (in km)
+    function calcCrow(lat1, lon1, lat2, lon2) 
+    {
+      var R = 6371; // km
+      var dLat = toRad(lat2-lat1);
+      var dLon = toRad(lon2-lon1);
+      var lat1 = toRad(lat1);
+      var lat2 = toRad(lat2);
+
+      var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2); 
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+      var d = R * c;
+      return d;
+    }
+
+    // Converts numeric degrees to radians
+    function toRad(Value) 
+    {
+        return Value * Math.PI / 180;
+    }
+}
+
+var unsorted_dis=dis.slice(0);
+var sorted_dis=dis.sort()
+document.write(unsorted_dis+"\n")
+document.write(sorted_dis)
+var sht_index = unsorted_dis.indexOf(sorted_dis[0])
+
+
+	</script>
+
+</body>
+</html>
