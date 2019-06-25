@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>HEART ANALYSIS </title>
+  <link rel="" type="text/css" href="">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <body style="background-image: url(1.jpeg);background-repeat: no-repeat; background-size: 1000px;background-color: black;>
+
+   <div class="container">
+   <h1 align="center" style="color: red;">HEAsRT ANALYSIS</h1>
+   
+   <div class="col-md-6" style="margin:0 auto; float:none;">
+    
+     <h3 align="center" style="color: blue;">Fill The Health Details</h3>
+     
+  
+      <form name="passdata" action="." method="POST">
+     <div class="form-group">
+      <label>Enter Age</label>
+      <input type="number" class="form-control" name="age" placeholder="Enter Age"  >
+     <br>
+      <label>Enter Sex</label>
+      <select name="sex" class="form-control">
+        <option value="*">Enter Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      
+     <br>
+      <label>Enter Chest Pain Type</label>
+      <select name="cp" class="form-control" >
+        <option value="*">Enter chest Type</option>
+        <option value="ta">Typical Angina (type 1) </option>
+        <option value="aa">Atypical Angina (type 2) </option>
+        <option value="np">Non-Anginal Pain (type 3 )  </option>
+        <option value="as">Asymptomatic (type 4 ) </option>
+      </select>
+      
+     <br>
+      <label>Enter Trestbps</label>
+      <input type="number"  class="form-control" name="trestbps" placeholder="Enter Trestbps"  >
+     <br>
+      <label>Enter Cholestrol</label>
+      <input type="number"  class="form-control" name="chol" placeholder="Enter chol in mg/dl"  >
+     <br>
+      <label>Enter Fasting Blood Sugar</label>
+      <input type="number"  class="form-control" name="fbs" placeholder="Enter fbs in mg/dl" >
+     <br>
+      <label>Enter Rest ECG</label>
+      <select name="restecg" class="form-control" >
+        <option value="*">Enter Resting ECG </option>
+        <option value="nl">Normal</option>
+        <option value="st">ST-T Wave abnormality </option>
+        <option value="llh">Definite Left Ventricular Hypertrophy  </option>
+      </select>
+     <br>
+      <label>Enter Thalach</label>
+      <input type="number"  class="form-control" name="thalach" placeholder="Enter Thalach"  >
+     <br>
+      <label>Enter exang</label>
+      <select name="exang" class="form-control" >
+        <option value="*">Do you have Indused Angina </option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+     <br>
+      <label>Enter oldpeak</label>
+      <input type="float" class="form-control" name="oldpeak" placeholder="Enter oldpeak"  >
+     <br>
+      <label>Enter Slope</label>
+      <select name="slope" class="form-control" >
+        <option value="*">Enter Slope type </option>
+        <option value="up">Upsloping</option>
+        <option value="flat">Flat</option>
+        <option value="ds">Downsloping</option>
+      </select>
+     <br>
+      <label>Enter ca</label>
+      <select name="ca" class="form-control" >
+        <option value="*">Enter ca type </option>
+        <option value="zero">0</option>
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+      </select>
+     <br>
+      <label>Enter Thalium Stress </label>
+      <select name="thal" class="form-control" >
+        <option value="*">Enter Thalium Stress result </option>
+        <option value="nl">Normal</option>
+        <option value="fd">Fixed defect</option>
+        <option value="rd">Reversable defect </option>
+        
+      </select>
+     <br>
+      <center><button>predict</button></center>
+     </div>
+
+    
+  </form>
+</div>
+</div>
+
+ </body>
+</html>
+
+
+
+
