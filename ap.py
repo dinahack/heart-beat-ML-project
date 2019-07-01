@@ -175,7 +175,21 @@ def getvalue():
 	elif predictions==0:
 		pass
 		answer="Your HEART is Healthy"
-
+		
+		
+	if qsex=="male":
+		qsex="MALE"
+	elif qsex=="female:
+		qsex="FEMALE"
+		
+        if qcp=="ta":
+		qcp="Typical Angina (type 1)"
+	elif qcp=="aa":
+		qcp="Atypical Angina (type 2)"        
+	elif qcp=="np":
+		qcp="Non-Anginal Pain (type 3 )"
+	elif qcp=="as":
+		qcp="Asymptomatic (type 4 )"
 
 	
 
