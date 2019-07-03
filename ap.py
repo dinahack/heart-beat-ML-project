@@ -180,7 +180,7 @@ def getvalue():
 	if qsex=="male":
 		pass
 		qsex="MALE"
-	elif qsex=="female:
+	elif qsex=="female":
 	        pass
 		qsex="FEMALE"
 		
