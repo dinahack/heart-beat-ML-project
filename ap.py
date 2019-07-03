@@ -178,18 +178,65 @@ def getvalue():
 		
 		
 	if qsex=="male":
+		pass
 		qsex="MALE"
 	elif qsex=="female:
+	        pass
 		qsex="FEMALE"
 		
         if qcp=="ta":
+		pass
 		qcp="Typical Angina (type 1)"
 	elif qcp=="aa":
+		pass
 		qcp="Atypical Angina (type 2)"        
 	elif qcp=="np":
+		pass
 		qcp="Non-Anginal Pain (type 3 )"
 	elif qcp=="as":
+		pass
 		qcp="Asymptomatic (type 4 )"
+		
+		
+	
+        if qrestecg="nl":
+		pass
+		qrestecg=Normal
+        elif qrestecg=="st":
+		pass
+		qrestecg="ST-T Wave abnormality"
+        elif qrestecg=="llh":
+		pass
+		qrestecg="Definite Left Ventricular Hypertrophy"
+		
+		
+	if qexanf=="yes":
+		pass
+		qexanh="Yes"
+        elif=="no":
+		pass
+		qexanf="No"
+	
+	if qslope=="up":
+		pass
+		qslope="Upsloping"
+        elif qslope=="flat":
+		pass
+		qslope="Flat"
+	elif qslope=="ds":
+		pass
+		qslope="Downsloping"
+	
+	if qthal=="nl":
+		pass
+		qthal="Normal"
+	elif qthal=="fd":
+		pass
+		qthal="Fixed defect"
+	elif qthal=="rd":
+		pass
+		qthal="Reversable defect"
+
 
 	
 
