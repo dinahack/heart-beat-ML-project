@@ -199,9 +199,9 @@ def getvalue():
 		
 		
 	
-        if qrestecg="nl":
+        if qrestecg=="nl":
 		pass
-		qrestecg=Normal
+		qrestecg="Normal"
         elif qrestecg=="st":
 		pass
 		qrestecg="ST-T Wave abnormality"
@@ -210,12 +210,12 @@ def getvalue():
 		qrestecg="Definite Left Ventricular Hypertrophy"
 		
 		
-	if qexanf=="yes":
+	if qexang=="yes":
 		pass
-		qexanh="Yes"
-        elif=="no":
+		qexang="Yes"
+        elif qexang=="no":
 		pass
-		qexanf="No"
+		qexang="No"
 	
 	if qslope=="up":
 		pass
